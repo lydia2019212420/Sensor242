@@ -2,15 +2,20 @@
     <string name="app_name">242传感器数据采集</string>
 
     <string-array name="actions">
-        <item>上楼</item>
-        <item>下楼</item>
-        <item>走路</item>
-        <item>跑步</item>
-        <item>站立</item>
-        <item>坐立</item>
-        <item>打游戏</item>
-        <item>打电话</item>
-        <item>跳跃</item>
-        <item>其它</item>
+        <item>1上楼</item>
+        <item>2下楼</item>
+        <item>3走路</item>
+        <item>4跑步</item>
+        <item>5站立</item>
+        <item>6坐立</item>
+        <item>7打游戏</item>
+        <item>8打电话</item>
+        <item>9跳跃</item>
+        <item>10骑自行车</item>
+        <item>11骑电动车</item>
+        <item>12坐公交车</item>
+        <item>13乘地铁</item>
+        <item>14驾车/乘出租车</item>
+        <item>15其它</item>
     </string-array>
 </resources>
