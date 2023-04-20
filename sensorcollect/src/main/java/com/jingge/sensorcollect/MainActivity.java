@@ -504,7 +504,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_stop:
                 stopSensorListening();
-                locationManager.removeUpdates(mLocationListener);
+//                locationManager.removeUpdates(mLocationListener);
 //                String[] title = new String[]{"timestamp", "1", "2", "3"};
 
                 try {
@@ -679,7 +679,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //sensorEvent返回的timestamp需要转换为Unix时间戳
     private long stampConvert(long timestamp) {
-        long Unix_timestamp = (new Date()).getTime() + ((timestamp - System.nanoTime()) / 1000000L);
+        long Unix_timestamp = System.currentTimeMillis() + (timestamp - System.nanoTime()) / 1000000;
         return Unix_timestamp;
     }
 
@@ -722,11 +722,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }).start();
 
-//            if (i == 0) {
-//                ToastUtil.show(this,"上传失败，请手动查看文件");
-//            }else {
-//                ToastUtil.show(this,"上传成功！");
-//            }
         }
         if (et_User.isEnabled()) {
             SharedPreferences sp = getSharedPreferences("242Collection", MODE_PRIVATE);
